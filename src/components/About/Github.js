@@ -1,22 +1,24 @@
 import React from "react";
-import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 
-function Github() {
+function LeetcodeStats() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Days I <strong className="purple">Code</strong>
+        My <strong className="purple">LeetCode</strong> Activity
       </h1>
-      <GitHubCalendar
-        username="soumyajit4419"
-        blockSize={15}
-        blockMargin={5}
-        color="#c084f5"
-        fontSize={16}
+
+      <img
+        src="https://leetcard.jacoblin.cool/darpan2004?theme=dark&animation=true"
+        alt="LeetCode Stats"
+        style={{
+          maxWidth: "100%",
+          borderRadius: "10px",
+          boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.3)",
+        }}
       />
     </Row>
   );
 }
 
-export default Github;
+export default LeetcodeStats;
